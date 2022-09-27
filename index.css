@@ -1,0 +1,92 @@
+/* Colour declarations*/
+:root {
+    --section-bg: #1F2937;
+    --text-white: #FFFFFF;
+    --black-border: black;
+    --input-bg:#B295FF;
+    --shadow-bg:rgba(0, 0, 0, 0.05);
+    --button-text:#3D3D3D;
+    --card-bg:#273549;
+    --header-bg:#6943fe;
+    --convertBtn-bg:#24574E;
+    --resetBtn-bg:#BF1010;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.main-container {
+    margin: 10px auto;
+    background: var(--section-bg);
+    color: var(--text-white);
+    width: 550px;
+    display: grid;    
+    justify-content: center;
+    height: 729px;
+    border: 1px solid var(--black-border);
+    border-radius: 10px;
+}
+
+/*h1 {
+    
+}*/
+
+input {
+    border: 2px solid var(--input-bg);
+    border-radius: 5px; 
+    width: 117px;
+    height: 83px; 
+    background: var(--input-bg);
+    font-weight: 800px;
+    font-size: 58px;
+    text-align: center;
+    margin: 5px auto;
+
+}
+
+
+button {
+    display: block;
+    Width: 117px;
+    Height: 42px;
+    background: var(--text-white);
+    /* shadow/sm */ 
+    box-shadow: 0px 1px 2px var(--shadow-bg);
+    border-radius: 5px;
+    margin: 10px auto;
+    font-weight: 500px;
+    font-size: 16px;
+    color: var(--button-text);
+    font-weight: bold;
+    font-family: inherit;
+}
+
+#converter-btn:hover {
+    background-color: var(--convertBtn-bg);
+    color: var(--text-white);
+}
+
+#reset-btn:hover {
+    background-color: var(--resetBtn-bg);
+    color: var(--text-white);
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 3;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 108.57px;
+    background: var(--card-bg);
+    line-height: 20px;
+    text-align: center;
+    font-weight: 600px;
+}
+
